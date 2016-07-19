@@ -11,7 +11,7 @@
  * specific language governing permissions and limitations under the License.
  */
 
-package guice.annotation;
+package ownCloud.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -21,8 +21,8 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Import;
-import guice.module.GuiceModuleMetadata;
-import guice.module.SpringModule;
+import ownCloud.module.GuiceModuleMetadata;
+import ownCloud.module.SpringModule;
 
 /**
  * Annotation that decorates the whole application context and provides metadata to Guice
@@ -44,32 +44,32 @@ import guice.module.SpringModule;
 public @interface GuiceModule {
 
 	/**
-	 * Specifies which types are eligible for inclusion in Guice module
+	 * Specifies which types are eligible for inclusion in Guice ownCloud.module
 	 */
 	Filter[] includeFilters() default {};
 
 	/**
-	 * Specifies which types are not eligible for inclusion in Guice module.
+	 * Specifies which types are not eligible for inclusion in Guice ownCloud.module.
 	 */
 	Filter[] excludeFilters() default {};
 
 	/**
-	 * Specifies which names (by regex) are eligible for inclusion in Guice module
+	 * Specifies which names (by regex) are eligible for inclusion in Guice ownCloud.module
 	 */
 	String[] includePatterns() default {};
 
 	/**
-	 * Specifies which bean names (by regex) are not eligible for inclusion in Guice module.
+	 * Specifies which bean names (by regex) are not eligible for inclusion in Guice ownCloud.module.
 	 */
 	String[] excludePatterns() default {};
 
 	/**
-	 * Specifies which names (by simple wildcard match) are eligible for inclusion in Guice module
+	 * Specifies which names (by simple wildcard match) are eligible for inclusion in Guice ownCloud.module
 	 */
 	String[] includeNames() default {};
 
 	/**
-	 * Specifies which bean names (by simple wildcard match) are not eligible for inclusion in Guice module.
+	 * Specifies which bean names (by simple wildcard match) are not eligible for inclusion in Guice ownCloud.module.
 	 */
 	String[] excludeNames() default {};
 

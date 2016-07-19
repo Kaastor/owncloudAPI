@@ -1,4 +1,4 @@
-package guice.annotation;
+package ownCloud.annotation;
 
 import javax.inject.Provider;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package guice.module;
+package ownCloud.module;
 
 /**
  * @author Dave Syer

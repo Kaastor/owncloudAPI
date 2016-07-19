@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package guice.injector;
+package ownCloud.injector;
 
 import java.util.List;
 

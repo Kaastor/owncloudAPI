@@ -1,8 +1,8 @@
-package guice;
+package ownCloud;
 
 import com.anrisoftware.simplerest.owncloud.RestOwncloudModule;
 import com.anrisoftware.simplerest.owncloudocs.RestOwncloudOcsModule;
-import guice.annotation.EnableGuiceModules;
+import ownCloud.annotation.EnableGuiceModules;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

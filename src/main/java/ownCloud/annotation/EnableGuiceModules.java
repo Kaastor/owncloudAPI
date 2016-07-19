@@ -11,7 +11,7 @@
  * specific language governing permissions and limitations under the License.
  */
 
-package guice.annotation;
+package ownCloud.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

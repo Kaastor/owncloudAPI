@@ -11,7 +11,7 @@
  * specific language governing permissions and limitations under the License.
  */
 
-package guice.annotation;
+package ownCloud.annotation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -30,7 +30,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
-import guice.module.SpringModule;
+import ownCloud.module.SpringModule;
 
 import com.google.inject.Binding;
 import com.google.inject.Guice;

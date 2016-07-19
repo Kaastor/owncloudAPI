@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package guice.module;
+package ownCloud.module;
 
 import java.io.IOException;
 import java.lang.reflect.Modifier;
@@ -28,11 +28,11 @@ import org.springframework.core.type.classreading.CachingMetadataReaderFactory;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.core.type.filter.TypeFilter;
-import guice.annotation.GuiceModule;
+import ownCloud.annotation.GuiceModule;
 import org.springframework.util.PatternMatchUtils;
 
 /**
- * Encapsulates some metadata about a Guice module that is to be created from a Spring
+ * Encapsulates some metadata about a Guice ownCloud.module that is to be created from a Spring
  * application context. Can be used directly as a <code>@Bean</code>, but it is easier to
  * just add <code>@</code> {@link GuiceModule} to your <code>@Configuration</code>.
  * 

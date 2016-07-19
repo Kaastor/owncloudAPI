@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package guice.injector;
+package ownCloud.injector;
 
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.config.DependencyDescriptor;
