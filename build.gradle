@@ -2,14 +2,138 @@ group 'com.przemys'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'application'
 
 sourceCompatibility = 1.5
 
-repositories {
-    mavenCentral()
-}
+buildscript
+        {
+            ext
+                    {
+                        // springBootVersion = '1.4.0.BUILD-SNAPSHOT'
+                    }
 
-dependencies {
+            repositories
+                    {
+                        mavenCentral()
+                        maven { url 'https://repo.spring.io/snapshot' }
+                        maven { url 'https://repo.spring.io/milestone' }
+                        maven { url 'https://repo.spring.io/libs-milestone' }
+                    }
+
+            dependencies
+                    {
+                        classpath 'org.springframework.boot:spring-boot-gradle-plugin:+'
+                        classpath 'org.springframework:springloaded:+'
+                    }
+        }
+
+configurations
+        {
+            compile.exclude module: 'spring-boot-starter-tomcat'
+        }
+
+
+repositories
+        {
+            mavenCentral()
+            maven { url 'https://repo.spring.io/snapshot' }
+            maven { url 'https://repo.spring.io/milestone' }
+            maven { url 'https://repo.spring.io/libs-milestone' }
+            maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
+        }
+
+/*dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile 'com.anrisoftware.simplerest:simplerest-owncloud-ocs:+'
+}*/
+
+dependencies
+        {
+            //
+            // spring
+            compile 'javax.inject:javax.inject:+'
+            compile 'org.springframework.boot:spring-boot-starter-mail:+'
+            compile 'org.springframework:springloaded:+'
+            compile 'org.springframework.boot:spring-boot-starter-web:+'
+            compile 'org.springframework.boot:spring-boot-starter-jetty:+'
+            compile 'org.springframework.boot:spring-boot-starter-test:+'
+            //
+            // utils
+            compile 'commons-io:commons-io:+'
+            compile 'commons-net:commons-net:+'
+            compile 'org.projectlombok:lombok:+'
+            compile 'com.google.code.gson:gson:+'
+            compile 'com.google.guava:guava:+'
+            compile 'org.apache.commons:commons-lang3:+'
+            compile 'org.json:json:+'
+            compile 'org.jsoup:jsoup:+'
+            //
+            // aspects
+            compile 'org.springframework:spring-aop:+'
+            compile 'org.springframework.boot:spring-boot-starter-aop:+'
+            compile 'org.aspectj:aspectjrt:+'
+            compile 'org.aspectj:aspectjweaver:+'
+            compile 'cglib:cglib:+'
+            compile 'cglib:cglib-nodep:+'
+            //
+            // akka
+            compile 'com.typesafe.akka:akka-protobuf_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-parsing_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-actor_2.12.0-M4:+'
+            //    compile 'com.typesafe.akka:akka-persistence-cassandra_2:+'
+            compile 'com.typesafe.akka:akka-cluster-sharding_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-cluster-metrics_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-cluster-tools_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-distributed-data-experimental_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-contrib_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-cluster_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-persistence-query-experimental_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-remote_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-persistence-tck_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-camel_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-typed-experimental_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-kernel_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-slf4j_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-persistence_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-osgi_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-stream_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-multi-node-testkit_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-stream-testkit_2.12.0-M4:+'
+            compile 'com.typesafe.akka:akka-testkit_2.12.0-M4:+'
+            //
+            // cloud
+            compile 'com.dropbox.core:dropbox-core-sdk:1.8'
+            compile 'com.anrisoftware.simplerest:simplerest-owncloud-ocs:+'
+            //
+            // spock
+            compile 'org.codehaus.groovy:groovy-all:+'
+            compile 'org.spockframework:spock-core:+'
+            compile 'org.hamcrest:hamcrest-core:+'
+            compile 'org.objenesis:objenesis:+'
+        }
+
+
+
+compileJava
+        {
+            options.fork = true
+            options.incremental = true
+        }
+
+idea
+        {
+            module
+                    {
+                        inheritOutputDirs = false
+                        outputDir = file("$buildDir/classes/main/")
+                    }
+        }
+
+task wrapper(type: Wrapper) \
+{
+    gradleVersion = '2.14'
 }

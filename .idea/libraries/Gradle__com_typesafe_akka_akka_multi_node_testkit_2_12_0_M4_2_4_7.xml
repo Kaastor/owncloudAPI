@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.akka:akka-multi-node-testkit_2.12.0-M4:2.4.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-multi-node-testkit_2.12.0-M4/2.4.7/1241d4f7d6526463d5ebd2b982d7eae1d49cd70b/akka-multi-node-testkit_2.12.0-M4-2.4.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-multi-node-testkit_2.12.0-M4/2.4.7/6fe2cc970c905b614d21d16a83e20291a0adeebd/akka-multi-node-testkit_2.12.0-M4-2.4.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

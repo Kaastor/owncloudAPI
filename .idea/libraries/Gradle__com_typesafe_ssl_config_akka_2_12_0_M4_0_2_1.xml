@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe:ssl-config-akka_2.12.0-M4:0.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe/ssl-config-akka_2.12.0-M4/0.2.1/f06d2cd72f58c26f455787789b4df9610e08632/ssl-config-akka_2.12.0-M4-0.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe/ssl-config-akka_2.12.0-M4/0.2.1/e1345a42fd9356abba43b8c5d9f65046dccb9c57/ssl-config-akka_2.12.0-M4-0.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

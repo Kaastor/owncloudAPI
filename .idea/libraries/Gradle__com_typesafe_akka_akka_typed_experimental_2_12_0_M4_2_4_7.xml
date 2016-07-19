@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.akka:akka-typed-experimental_2.12.0-M4:2.4.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-typed-experimental_2.12.0-M4/2.4.7/1f6cdb3624e5f5b45ad1e365554b9d89ea4cfa7a/akka-typed-experimental_2.12.0-M4-2.4.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-typed-experimental_2.12.0-M4/2.4.7/5fb6e8b100187ddcaeb0df95b5bf76f74d9c739b/akka-typed-experimental_2.12.0-M4-2.4.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

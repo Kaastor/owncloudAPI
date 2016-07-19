@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.eclipse.jetty.websocket:javax-websocket-client-impl:9.3.10.v20160621">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-client-impl/9.3.10.v20160621/510e61d545ee618b261fac8d90f1b72a90cc73ee/javax-websocket-client-impl-9.3.10.v20160621.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-client-impl/9.3.10.v20160621/8ec0bfb92ac6850ab781d4e2ef2e56d7fb313a8a/javax-websocket-client-impl-9.3.10.v20160621-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

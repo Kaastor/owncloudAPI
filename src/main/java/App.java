@@ -17,6 +17,7 @@ public class App {
 
     private final OwncloudUploadService uploadService;
 
+
     @Inject
     public App(OwncloudUploadService uploadService){
         this.uploadService = uploadService;
@@ -37,9 +38,7 @@ public class App {
             throws java.net.MalformedURLException, java.net.URISyntaxException,
             com.anrisoftware.simplerest.core.SimpleRestException {
 
-        URL url = new URL("http://192.168.179.131/owncloud");
-        URI uri = url.toURI();
-
+        URI uri = new URL("http://192.168.179.131/owncloud").toURI();
         uploadService.requestStatus(uri);
     }
 
