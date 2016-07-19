@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @EnableGuiceModules
 @Configuration
-class AppConfig {
+class OwncloudUploadConfig {
 
     @Bean
     public RestOwncloudOcsModule restOwncloudOcsModule() {
