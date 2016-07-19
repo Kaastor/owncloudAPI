@@ -13,7 +13,7 @@ import java.net.URL;
 /**
  * Created by Przemek on 2016-07-19.
  */
-public class App {
+class App {
 
     private final OwncloudUploadService uploadService;
 
@@ -34,7 +34,7 @@ public class App {
         }
     }
 
-    public void start()
+    private void start()
             throws java.net.MalformedURLException, java.net.URISyntaxException,
             com.anrisoftware.simplerest.core.SimpleRestException {
 

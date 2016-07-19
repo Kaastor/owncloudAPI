@@ -12,10 +12,10 @@ import java.net.URI;
 /**
  * Created by Przemek on 2016-07-19.
  */
-public class OwncloudUploadService {
+class OwncloudUploadService {
 
-    DefaultOwncloudAccountFactory accountFactory;
-    OwncloudOcsUploadFileFactory uploadFileFactory;
+    private final DefaultOwncloudAccountFactory accountFactory;
+    private final OwncloudOcsUploadFileFactory uploadFileFactory;
 
     @Inject
     public OwncloudUploadService(DefaultOwncloudAccountFactory accountFactory, OwncloudOcsUploadFileFactory uploadFileFactory){
@@ -25,8 +25,8 @@ public class OwncloudUploadService {
 
     public void requestStatus(URI uri) throws SimpleRestException {
         DefaultOwncloudAccount account = accountFactory.create("przemys", "przemys", uri);
-        OwncloudUploadFile upload = uploadFileFactory.create(account, new File("C:\\Users\\Przemek\\Desktop\\Czystykod.pdf"),
-                "Czystykod.pdf", ContentType.create("text/plain", "UTF-8"));
+        OwncloudUploadFile upload = uploadFileFactory.create(account, new File("C:\\Users\\Przemek\\Desktop\\sunny-forest.jpg"),
+                "Photos/sunny-forest.jpg", ContentType.create("text/plain", "UTF-8"));
         upload.call();
 
     }

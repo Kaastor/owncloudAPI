@@ -46,10 +46,6 @@ repositories
             maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
         }
 
-/*dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile 'com.anrisoftware.simplerest:simplerest-owncloud-ocs:+'
-}*/
 
 dependencies
         {
