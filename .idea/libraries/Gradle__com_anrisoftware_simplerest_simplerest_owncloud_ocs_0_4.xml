@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.anrisoftware.simplerest:simplerest-owncloud-ocs:0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.anrisoftware.simplerest/simplerest-owncloud-ocs/0.4/22d9d93ee564344ef7b0fd999e09c1b930ca0a40/simplerest-owncloud-ocs-0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.anrisoftware.simplerest/simplerest-owncloud-ocs/0.4/6b4647ca43ad939e77291d41ea7b73fe450e1925/simplerest-owncloud-ocs-0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
