@@ -8,10 +8,11 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by Przemek on 2016-07-19.
+ *
  */
 @EnableGuiceModules
 @Configuration
-class OwncloudUploadConfig {
+class OwncloudConfig {
 
     @Bean
     public RestOwncloudOcsModule restOwncloudOcsModule() {

@@ -10,6 +10,11 @@
           <file>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.3.Final/15adf7ddece077d7dc429db058981f528d1c899a/netty-3.10.3.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
           <file>file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.3.Final/15adf7ddece077d7dc429db058981f528d1c899a/netty-3.10.3.Final.jar</file>
         </fileset>
+        <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/ownCloud/App.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/ownCloud/annotation/ModuleRegistryConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/ownCloud/OwncloudUploadConfig.java</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

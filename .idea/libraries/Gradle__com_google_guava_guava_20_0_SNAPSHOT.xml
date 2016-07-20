@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.guava:guava:20.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0-SNAPSHOT/95a4d8c5af3ff707cc0d98bb5604372cd0ef7d04/guava-20.0-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0-SNAPSHOT/b90e7e9dae53d09e51a5bca03fa0d1677dac5aff/guava-20.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0-SNAPSHOT/205a0b70e5d87498c8d9960728364b19a6cb1ca4/guava-20.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0-SNAPSHOT/9802d1e1f8ad7bfebbb15e54fc86b84fa79724c3/guava-20.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

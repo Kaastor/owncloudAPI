@@ -11,6 +11,8 @@ import java.net.URL;
 
 /**
  * Created by Przemek on 2016-07-19.
+ * baseUri 192.168.179.131/owncloud
+   remotePath "Photos/sunny-forest.jpg"
  */
 @SpringBootApplication
 @ComponentScan("ownCloud")
@@ -20,8 +22,20 @@ class App {
     public static void main(String[] args){
         ApplicationContext ctx = SpringApplication.run(App.class, args);
         OwncloudUploadService owncloudUploadService = (OwncloudUploadService) ctx.getBean("owncloudUploadService");
-        owncloudUploadService.uploadFile("przemys", "przemys", new URL("http://192.168.179.131/owncloud").toURI(),
-                new File("C:\\Users\\Przemek\\Desktop\\sunny-forest.jpg"), "Photos/sunny-forest.jpg");
+        owncloudUploadService.uploadFile("przemys", "przemys",
+                new URL("http://192.168.179.131/owncloud").toURI(),
+                new File("C:\\Users\\Przemek\\Desktop\\sunnyforest.jpg"), "Photos/sunny-forest.jpg");
+
+
+        OwncloudDownloadService owncloudDownloadService = (OwncloudDownloadService) ctx.getBean("owncloudDownloadService");
+        owncloudDownloadService.downloadFile("przemys", "przemys",
+                new URL("http://192.168.179.131/owncloud").toURI(),
+                "Documents/Czystykod.pdf", "C:\\Users\\Przemek\\Desktop\\CzystyKod.pdf");
+
+
+
     }
+
+
 
 }
