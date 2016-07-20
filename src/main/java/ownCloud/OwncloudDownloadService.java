@@ -34,6 +34,7 @@ class OwncloudDownloadService {
 
     @SneakyThrows
     public void downloadFile(String user, String password, URI baseUri, String remotePath, String fileDestinationPath) {
+
         account = accountFactory.create(user, password, baseUri);
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpget = new HttpGet(getRequestURI(remotePath));
