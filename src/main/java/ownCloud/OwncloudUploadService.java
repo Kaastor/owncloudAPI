@@ -35,4 +35,5 @@ class OwncloudUploadService {
                 remotePath, ContentType.create("text/plain", "UTF-8"));
         upload.call();
     }
+
 }
