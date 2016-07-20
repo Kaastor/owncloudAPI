@@ -30,6 +30,7 @@ class OwncloudDownloadService {
     @Autowired
     public void setOwncloudUploadService(DefaultOwncloudAccountFactory accountFactory){
         this.accountFactory =  accountFactory;
+
     }
 
     @SneakyThrows
