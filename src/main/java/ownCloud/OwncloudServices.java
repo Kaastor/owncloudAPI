@@ -28,14 +28,12 @@ import java.net.URISyntaxException;
 @Component
 class OwncloudServices {
 
-    private DefaultOwncloudAccountFactory accountFactory;
     private OwncloudOcsUploadFileFactory uploadFileFactory;
     private DefaultOwncloudAccount account;
 
     @Autowired
     @SneakyThrows
     public void setOwncloudUploadService(DefaultOwncloudAccountFactory accountFactory, OwncloudOcsUploadFileFactory uploadFileFactory){
-        this.accountFactory =  accountFactory;
         this.uploadFileFactory =  uploadFileFactory;
         this.account = accountFactory.create("przemys", "przemys", new URI("http://192.168.179.131/owncloud"));
     }
