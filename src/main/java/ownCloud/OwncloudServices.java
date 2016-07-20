@@ -61,6 +61,7 @@ class OwncloudServices {
                 fos.write(inByte);
             is.close();
             fos.close();
+
         }
     }
 
