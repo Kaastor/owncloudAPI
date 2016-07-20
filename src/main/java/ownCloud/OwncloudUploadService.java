@@ -26,7 +26,6 @@ class OwncloudUploadService {
     public void setOwncloudUploadService(DefaultOwncloudAccountFactory accountFactory, OwncloudOcsUploadFileFactory uploadFileFactory){
         this.accountFactory =  accountFactory;
         this.uploadFileFactory =  uploadFileFactory;
-
     }
 
     @SneakyThrows
