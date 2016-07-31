@@ -24,7 +24,7 @@ class App {
         owncloudServices.uploadFile( new File("C:\\Users\\Przemek\\Desktop\\sunnyforest.jpg"), "Photos/sunny-forest.jpg");
         owncloudServices.downloadFile("Documents/Czystykod.pdf", "C:\\Users\\Przemek\\Desktop\\CzystyKod.pdf");
     }
-
-
-
+//feature change1
+//feature change2
+//feature change3
 }
