@@ -17,7 +17,8 @@ import java.io.File;
 @SpringBootApplication
 @ComponentScan("ownCloud")
 class App {
-    //amster change
+    //master change
+    //master change 2
     public static void main(String[] args){
         ApplicationContext ctx = SpringApplication.run(App.class, args);
         OwncloudServices owncloudServices = (OwncloudServices) ctx.getBean("owncloudServices");
